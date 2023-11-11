@@ -1,12 +1,14 @@
-let search = document.querySelector('#search-bar');
-let searchbox = document.querySelector('.search-box');
-let menubar = document.querySelector('#menu-bars');
-let mynav = document.querySelector('.navbar');
-
-search.onclick = () =>{
-    searchbox.classList.toggle('active')
-;}
-menubar.onclick =() =>{
-    menubar.classList.toggle('fa-times')
-    myfav.classList.toggle('active')
-}
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+registerLink.addEventListener('click', ()=> {
+    wrapper.classList.add('active');
+});
+loginLinkLink.addEventListener('click', ()=> {
+    wrapper.classList.remove('active');
+});
+const btnPopup = document.querySelector('.btnLogin-popup');
+const iconClose = document.querySelector('.icon-close');
+btnPopup.addEventListener('click', ()=> {
+    wrapper.classList.remove('active-popup');
+});
